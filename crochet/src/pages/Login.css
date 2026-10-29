@@ -1,0 +1,131 @@
+/* ============================= */
+/* LOGIN PAGE */
+/* ============================= */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f1ef;
+  padding: 20px;
+}
+
+/* ============================= */
+/* LOGIN BOX */
+/* ============================= */
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2b1b1b;
+  font-size: 30px;
+}
+
+/* ============================= */
+/* ERROR MESSAGE */
+/* ============================= */
+
+.error-message {
+  background: #fbeaea;
+  color: #a00000;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2b1b1b;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5caca;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #800020;
+  box-shadow: 0 0 0 2px rgba(128, 0, 32, 0.1);
+}
+
+/* ============================= */
+/* LOGIN BUTTON */
+/* ============================= */
+
+.login-box form button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #800020;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-box form button:hover {
+  background: #5f0018;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 500px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-box h2 {
+    font-size: 26px;
+  }
+}
+
+.register-prompt {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.register-link {
+  color: #a52a4d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.register-link:hover {
+  color: #d94b75;
+  text-decoration: underline;
+}

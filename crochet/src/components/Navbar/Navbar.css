@@ -1,0 +1,375 @@
+
+/* ==============================
+   MAIN NAVBAR
+============================== */
+
+.store-navbar {
+  width: 100%;
+  min-height: 82px;
+  padding: 14px 5%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #eee5e8;
+  box-shadow: 0 3px 15px rgba(35, 10, 20, 0.05);
+
+  position: relative;
+  z-index: 100;
+}
+
+/* ==============================
+   LOGO
+============================== */
+
+.store-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  cursor: pointer;
+  line-height: 1.1;
+}
+
+.logo-main {
+  color: #8b1e3f;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo-sub {
+  margin-top: 5px;
+  color: #555;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+/* ==============================
+   NAVIGATION LINKS
+============================== */
+
+.store-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+
+  color: #393137;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #8b1e3f;
+}
+
+/* Active underline */
+
+.store-nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+
+  background: #8b1e3f;
+  transition: width 0.25s ease;
+}
+
+.store-nav-links .nav-link.active::after,
+.store-nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ==============================
+   RIGHT-SIDE ACTIONS
+============================== */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+/* Wishlist and cart buttons */
+
+.nav-icon-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+  background: #f8f2f4;
+
+  color: #8b1e3f;
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-icon-button:hover {
+  background: #8b1e3f;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Cart and wishlist count */
+
+.nav-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+
+  min-width: 19px;
+  height: 19px;
+  padding: 0 4px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  background: #8b1e3f;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ==============================
+   LOGIN AND SIGN UP
+============================== */
+
+.auth-nav-link {
+  text-decoration: none;
+}
+
+.nav-register-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 18px;
+  border: 1px solid #8b1e3f;
+  border-radius: 6px;
+
+  background: #8b1e3f;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-register-button:hover {
+  background: #65152d;
+  border-color: #65152d;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   LOGOUT BUTTON
+============================== */
+
+.nav-user-button {
+  padding: 10px 17px;
+
+  border: 1px solid #8b1e3f;
+  border-radius: 6px;
+  background: transparent;
+
+  color: #8b1e3f;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-user-button:hover {
+  background: #8b1e3f;
+  color: #ffffff;
+}
+
+/* ==============================
+   KEYBOARD ACCESSIBILITY
+============================== */
+
+.store-logo:focus-visible,
+.nav-link:focus-visible,
+.nav-icon-button:focus-visible,
+.nav-user-button:focus-visible,
+.nav-register-button:focus-visible {
+  outline: 3px solid #c77d96;
+  outline-offset: 4px;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 1000px) {
+  .store-navbar {
+    padding: 14px 3%;
+    gap: 18px;
+  }
+
+  .store-nav-links {
+    gap: 18px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .logo-main {
+    font-size: 22px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 700px) {
+  .store-navbar {
+    padding: 14px 4%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .store-logo {
+    margin-right: auto;
+  }
+
+  .logo-main {
+    font-size: 21px;
+  }
+
+  .store-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 24px;
+
+    overflow-x: auto;
+    padding: 3px 0 8px;
+  }
+
+  .navbar-actions {
+    gap: 9px;
+  }
+
+  .nav-icon-button {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  .nav-register-button {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .nav-user-button {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 400px) {
+  .store-navbar {
+    gap: 12px;
+  }
+
+  .logo-main {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .logo-sub {
+    font-size: 9px;
+    letter-spacing: 4px;
+  }
+
+  .store-nav-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-actions {
+    gap: 7px;
+  }
+
+  .nav-icon-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-register-button {
+    padding: 8px 10px;
+  }
+}

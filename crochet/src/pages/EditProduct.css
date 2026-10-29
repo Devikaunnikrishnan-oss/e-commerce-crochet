@@ -1,0 +1,145 @@
+.edit-product {
+  min-height: 100vh;
+  padding: 34px 38px 50px;
+  background: #f7f5f1;
+  color: #302923;
+}
+
+.edit-product-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.edit-product-container h1 {
+  margin: 0 0 8px;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.edit-product-container > p {
+  margin: 0 0 28px;
+  color: #8a8179;
+  font-size: 13px;
+}
+
+.edit-product-container form {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e4ded8;
+  border-radius: 6px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4b433d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcd5ce;
+  border-radius: 4px;
+  outline: none;
+  background: #faf9f7;
+  color: #302923;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #a85f6e;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(168, 95, 110, 0.08);
+}
+
+.edit-product-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.edit-product-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-product-buttons button[type="submit"] {
+  background: #a85f6e;
+  color: #ffffff;
+}
+
+.edit-product-buttons button[type="submit"]:hover {
+  background: #914f5e;
+}
+
+.edit-product-buttons button[type="button"] {
+  background: #eee9e4;
+  color: #4b433d;
+}
+
+.edit-product-buttons button[type="button"]:hover {
+  background: #e2dcd6;
+}
+
+.edit-product-error-text {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border: 1px solid #e5bcbc;
+  border-radius: 4px;
+  background: #fff2f2;
+  color: #a33f3f;
+  font-size: 12px;
+}
+
+.edit-product-loading,
+.edit-product-error {
+  min-height: 100vh;
+  padding: 50px;
+  background: #f7f5f1;
+  color: #6f665f;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .edit-product {
+    padding: 25px 18px 40px;
+  }
+
+  .edit-product-container form {
+    padding: 22px;
+  }
+
+  .edit-product-container h1 {
+    font-size: 32px;
+  }
+
+  .edit-product-buttons {
+    flex-direction: column;
+  }
+}

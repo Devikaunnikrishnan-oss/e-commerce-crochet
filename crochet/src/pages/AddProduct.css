@@ -1,0 +1,153 @@
+.add-product-page {
+  min-height: 100vh;
+  padding: 34px 38px 50px;
+  background: #f7f5f1;
+  color: #302923;
+}
+
+.add-product-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.add-product-header {
+  margin-bottom: 28px;
+}
+
+.add-product-header span {
+  color: #a85f6e;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.add-product-header h1 {
+  margin: 6px 0 8px;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.add-product-header p {
+  margin: 0;
+  color: #8a8179;
+  font-size: 13px;
+}
+
+.add-product-form {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e4ded8;
+  border-radius: 6px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4b433d;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcd5ce;
+  border-radius: 4px;
+  outline: none;
+  background: #faf9f7;
+  color: #302923;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #a85f6e;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(168, 95, 110, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa29b;
+}
+
+.add-product-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.add-product-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-product-buttons button[type="submit"] {
+  background: #a85f6e;
+  color: #ffffff;
+}
+
+.add-product-buttons button[type="submit"]:hover {
+  background: #914f5e;
+}
+
+.add-product-buttons button[type="button"] {
+  background: #eee9e4;
+  color: #4b433d;
+}
+
+.add-product-buttons button[type="button"]:hover {
+  background: #e2dcd6;
+}
+
+.add-product-error {
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border: 1px solid #e5bcbc;
+  border-radius: 4px;
+  background: #fff2f2;
+  color: #a33f3f;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .add-product-page {
+    padding: 25px 18px 40px;
+  }
+
+  .add-product-form {
+    padding: 22px;
+  }
+
+  .add-product-header h1 {
+    font-size: 32px;
+  }
+
+  .add-product-buttons {
+    flex-direction: column;
+  }
+}

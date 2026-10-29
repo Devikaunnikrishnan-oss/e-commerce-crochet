@@ -1,0 +1,49 @@
+.user-details {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.user-details h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.user-details-card {
+  max-width: 600px;
+  background-color: #171717;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.user-details-card h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.user-details-card p {
+  color: #cccccc;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.user-details-card strong {
+  color: white;
+}
+
+.user-details-card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8b1e3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.user-details-card button:hover {
+  background-color: #a52a4d;
+}

@@ -1,0 +1,499 @@
+/* =========================
+   CHECKOUT PAGE
+========================= */
+
+.checkout-page {
+  min-height: 100vh;
+  padding: 75px 7% 100px;
+  background: #fdfbf7;
+  color: #302923;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.checkout-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.checkout-header p {
+  margin: 0 0 10px;
+  color: #a85f6e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.checkout-header h1 {
+  margin: 0;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.checkout-header span {
+  display: block;
+  max-width: 500px;
+  margin: 15px auto 0;
+  color: #8a817a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.8fr);
+  gap: 65px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.checkout-form-section {
+  max-width: 720px;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.section-heading p {
+  margin: 0 0 8px;
+  color: #a85f6e;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin: 0 0 8px;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 31px;
+  font-weight: 500;
+}
+
+.section-heading span {
+  color: #8a817a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FORM ROW
+========================= */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+/* =========================
+   FORM FIELD
+========================= */
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.checkout-field label {
+  margin-bottom: 8px;
+  color: #302923;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.checkout-field input,
+.checkout-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd4cc;
+  outline: none;
+  background: #ffffff;
+  color: #302923;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+.checkout-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkout-field input::placeholder,
+.checkout-field textarea::placeholder {
+  color: #aaa19a;
+}
+
+.checkout-field input:focus,
+.checkout-field textarea:focus {
+  border-color: #a85f6e;
+}
+
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-section {
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px solid #e7dfd8;
+}
+
+.payment-label {
+  margin: 0 0 8px;
+  color: #a85f6e;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.payment-section h3 {
+  margin: 0 0 18px;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border: 1px solid #d9d0c8;
+  background: #ffffff;
+}
+
+.payment-option div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-option strong {
+  color: #302923;
+  font-size: 12px;
+}
+
+.payment-option span {
+  color: #8a817a;
+  font-size: 11px;
+}
+
+.payment-option input {
+  accent-color: #a85f6e;
+}
+
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.checkout-summary {
+  align-self: start;
+  padding: 35px;
+  background: #f5f2ed;
+  border: 1px solid #e7dfd8;
+}
+
+.summary-top {
+  margin-bottom: 25px;
+}
+
+.summary-top p {
+  margin: 0 0 7px;
+  color: #a85f6e;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.summary-top h2 {
+  margin: 0;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.checkout-products {
+  border-top: 1px solid #e1d9d1;
+}
+
+.checkout-product {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e1d9d1;
+}
+
+.checkout-product img {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: #f3e5e3;
+}
+
+.checkout-product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.checkout-product-info h3 {
+  margin: 0 0 5px;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.checkout-product-info span {
+  color: #8a817a;
+  font-size: 10px;
+}
+
+.checkout-product > strong {
+  color: #302923;
+  font-size: 12px;
+}
+
+
+/* =========================
+   PRICE DETAILS
+========================= */
+
+.checkout-prices {
+  padding-top: 12px;
+}
+
+.checkout-prices div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #77706a;
+  font-size: 12px;
+}
+
+.checkout-prices div span:last-child {
+  color: #302923;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 18px 0;
+  border-top: 1px solid #d9d0c8;
+  color: #302923;
+  font-size: 18px;
+}
+
+.checkout-total strong {
+  font-size: 19px;
+}
+
+
+/* =========================
+   PLACE ORDER
+========================= */
+
+.place-order-btn,
+.mobile-place-order {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  background: #302923;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.place-order-btn:hover,
+.mobile-place-order:hover {
+  background: #a85f6e;
+}
+
+.place-order-btn:disabled,
+.mobile-place-order:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.checkout-note {
+  margin: 17px 0 0;
+  color: #938a83;
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+
+/* =========================
+   MOBILE BUTTON
+========================= */
+
+.mobile-place-order {
+  display: none;
+}
+
+
+/* =========================
+   EMPTY CHECKOUT
+========================= */
+
+.checkout-empty {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #fdfbf7;
+  text-align: center;
+}
+
+.checkout-empty .checkout-label {
+  margin: 0 0 12px;
+  color: #a85f6e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.checkout-empty h1 {
+  margin: 0;
+  color: #302923;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.checkout-empty p:not(.checkout-label) {
+  max-width: 450px;
+  margin: 16px auto 30px;
+  color: #8a817a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.checkout-empty button {
+  padding: 14px 28px;
+  border: none;
+  background: #302923;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.checkout-empty button:hover {
+  background: #a85f6e;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  .checkout-page {
+    padding: 55px 5% 80px;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .checkout-form-section {
+    max-width: 100%;
+  }
+
+  .checkout-summary {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .checkout-page {
+    padding: 45px 20px 70px;
+  }
+
+  .checkout-header {
+    margin-bottom: 40px;
+  }
+
+  .checkout-header h1 {
+    font-size: 42px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .checkout-summary {
+    padding: 27px 22px;
+  }
+
+  .place-order-btn {
+    display: none;
+  }
+
+  .mobile-place-order {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .checkout-empty h1 {
+    font-size: 38px;
+  }
+
+}

@@ -1,0 +1,411 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "isBlocked": false
+    },
+    {
+      "id": "2",
+      "name": "Devika",
+      "email": "devika@gmail.com",
+      "password": "devika123",
+      "role": "user",
+      "isBlocked": true
+    },
+    {
+      "name": "Lakshmi",
+      "email": "devika11unnikrishnan@gmail.com",
+      "password": "lakshmi123",
+      "role": "user",
+      "id": "L3gvmQkjQZ4"
+    },
+    {
+      "name": "Vishnu VG",
+      "email": "vis@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "id": "U8qf7_jGExU",
+      "isBlocked": false
+    }
+  ],
+  "products": [
+    {
+      "id": "p001",
+      "name": "Crochet Teddy Bear",
+      "category": "Amigurumi",
+      "price": 899,
+      "description": "Handmade crochet teddy bear, perfect for gifting.",
+      "image": "https://loremflickr.com/cache/resized/7300_9917161866_343a3433dc_c_600_600_nofilter.jpg",
+      "stock": 15,
+      "isActive": true
+    },
+    {
+      "id": "p002",
+      "name": "Crochet Flower Handbag",
+      "category": "Bags",
+      "price": 1299,
+      "description": "Handmade handbag decorated with crochet flowers.",
+      "image": "https://i.pinimg.com/736x/20/7f/75/207f7591acf95f28373329a15de90531.jpg",
+      "stock": 10,
+      "isActive": true
+    },
+    {
+      "id": "p003",
+      "name": "Sunflower Crochet Tote",
+      "category": "Bags",
+      "price": 1499,
+      "description": "Crochet tote bag with a sunflower design.",
+      "image": "https://www.crochet365knittoo.com/wp-content/uploads/2019/09/Sunflower-3.jpg",
+      "stock": 8,
+      "isActive": true
+    },
+    {
+      "id": "p004",
+      "name": "Cute Crochet Bunny",
+      "category": "Amigurumi",
+      "price": 699,
+      "description": "Soft handmade crochet bunny toy.",
+      "image": "https://i.pinimg.com/736x/9c/09/6a/9c096a929744f26890cbd49daa9086d8.jpg",
+      "stock": 12,
+      "isActive": true
+    },
+    {
+      "id": "p005",
+      "name": "Crochet Rose Bouquet",
+      "category": "Home Decor",
+      "price": 799,
+      "description": "Handmade crochet roses arranged as a bouquet.",
+      "image": "https://rukminim2.flixcart.com/image/960/1280/xif0q/artificial-flower/7/h/t/1-crochet-rose-bouquet-saarforyou-enriched-0-original-imahh5g5bk9ahgqd.jpeg?q=20",
+      "stock": 10,
+      "isActive": true
+    },
+    {
+      "id": "p006",
+      "name": "Crochet Sling Bag",
+      "category": "Bags",
+      "price": 899,
+      "description": "Lightweight handmade crochet sling bag.",
+      "image": "https://sushobhan.co.in/wp-content/uploads/2025/07/4ac73231-8591-4639-bf6a-2e5e4b7013b9.png",
+      "stock": 9,
+      "isActive": true
+    },
+    {
+      "id": "p007",
+      "name": "Mini Crochet Bear Keychain",
+      "category": "Accessories",
+      "price": 249,
+      "description": "Cute mini crochet bear keychain.",
+      "image": "https://m.media-amazon.com/images/I/51-8G0tfL+L._AC_UY1100_.jpg",
+      "stock": 25,
+      "isActive": true
+    },
+    {
+      "id": "p008",
+      "name": "Granny Square Bag",
+      "category": "Bags",
+      "price": 1199,
+      "description": "Colorful handmade granny square shoulder bag.",
+      "image": "https://m.media-amazon.com/images/I/619yqoo88sL._AC_UF894,1000_QL80_.jpg",
+      "stock": 10,
+      "isActive": true
+    },
+    {
+      "id": "p009",
+      "name": "Crochet Cat Plushie",
+      "category": "Amigurumi",
+      "price": 749,
+      "description": "Adorable handmade crochet cat plushie.",
+      "image": "https://m.media-amazon.com/images/I/61t5da6iTiL._AC_UF1000,1000_QL80_.jpg",
+      "stock": 7,
+      "isActive": true
+    },
+    {
+      "id": "p010",
+      "name": "Crochet Flower Pot",
+      "category": "Home Decor",
+      "price": 599,
+      "description": "Decorative crochet flower pot for your home.",
+      "image": "https://m.media-amazon.com/images/I/6124zS-La6L._AC_UF894,1000_QL80_.jpg",
+      "stock": 14,
+      "isActive": true
+    },
+    {
+      "id": "p011",
+      "name": "Crochet Beach Bag",
+      "category": "Bags",
+      "price": 1599,
+      "description": "Spacious handmade crochet beach bag.",
+      "image": "https://hayhaycrochet.com/wp-content/uploads/2025/05/IMG_8849-768x1024.jpeg",
+      "stock": 6,
+      "isActive": true
+    },
+    {
+      "id": "p012",
+      "name": "Crochet Baby Elephant",
+      "category": "Amigurumi",
+      "price": 799,
+      "description": "Handmade elephant toy for gifting.",
+      "image": "https://cdn.jesshuff.com/cdn-cgi/imagedelivery/_el0QnEY9jNTqanHvIPcKg/jesshuff.com/2018/06/free-elephant-crochet-pattern-16x9-1.jpg/w=1200,h=675",
+      "stock": 11,
+      "isActive": true
+    },
+    {
+      "id": "p013",
+      "name": "Crochet Coin Purse",
+      "category": "Accessories",
+      "price": 349,
+      "description": "Small handmade crochet purse for essentials.",
+      "image": "https://m.media-amazon.com/images/I/819WbpZk8mL._AC_UY1100_.jpg",
+      "stock": 20,
+      "isActive": true
+    },
+    {
+      "id": "p014",
+      "name": "Crochet Daisy Bag",
+      "category": "Bags",
+      "price": 1399,
+      "description": "Trendy crochet bag decorated with daisy flowers.",
+      "image": "https://i.etsystatic.com/27950308/r/il/70a02b/3308908463/il_fullxfull.3308908463_d78v.jpg",
+      "stock": 8,
+      "isActive": true
+    },
+    {
+      "id": "p015",
+      "name": "Crochet Cushion Cover",
+      "category": "Home Decor",
+      "price": 899,
+      "description": "Handmade crochet cushion cover for your home.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa36DHOPSlaUiQ_RYFwgtg6f7XwDGGVuZGVwg6ArUWfpVX2rTQ2H4ujGc&s=10",
+      "stock": 9,
+      "isActive": true
+    },
+    {
+      "id": "p016",
+      "name": "Crochet Panda Plushie",
+      "category": "Amigurumi",
+      "price": 999,
+      "description": "Cute handmade crochet panda soft toy.",
+      "image": "https://www.mariskavos.nl/wp-content/uploads/2025/05/Free-Panda-crochet-pattern.webp",
+      "stock": 5,
+      "isActive": true
+    },
+    {
+      "id": "p017",
+      "name": "Crochet Phone Pouch",
+      "category": "Accessories",
+      "price": 449,
+      "description": "Handmade crochet pouch to protect your phone.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFEoBq2ETHkrPsgzAH-fkpBUW33YonxAKm3whhL_uEvyQAbPruqHVdN8y&s=10",
+      "stock": 18,
+      "isActive": true
+    },
+    {
+      "id": "p018",
+      "name": "Crochet Bucket Bag",
+      "category": "Bags",
+      "price": 1199,
+      "description": "Modern handmade crochet bucket bag.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgT8NbDg8m5K0f_B9diu34gcqXK3UBoFhqqTbKvF4xVw&s=10",
+      "stock": 7,
+      "isActive": true
+    },
+    {
+      "id": "p019",
+      "name": "Crochet Sunflower Decor",
+      "category": "Home Decor",
+      "price": 499,
+      "description": "Handmade crochet sunflower decoration.",
+      "image": "https://iz-product-images.blr1.cdn.digitaloceanspaces.com/vendors/1d1f2dc418e56eeeb4316dda455c7cea/products/10934/files/1773486992909-Gemini_Generated_Image_fqwqxtfqwqxtfqwq1.webp",
+      "stock": 16,
+      "isActive": true
+    },
+    {
+      "id": "p020",
+      "name": "Crochet Teddy Keychain",
+      "category": "Accessories",
+      "price": 299,
+      "description": "Mini handmade teddy bear keychain.",
+      "image": "https://pahadikala.com/storage/1045/6a1eabc76ad8e_cropped_image.jpg",
+      "stock": 22,
+      "isActive": true
+    },
+    {
+      "name": "m,",
+      "description": ",",
+      "price": 900,
+      "category": "Toys",
+      "image": "...",
+      "isActive": false,
+      "id": "ug88yTCiuo4"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "2",
+      "customer": {
+        "name": "Devika",
+        "email": "devika@gmail.com",
+        "phone": ""
+      },
+      "customerName": "Devika",
+      "email": "devika@gmail.com",
+      "phone": "",
+      "shippingAddress": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "address": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "items": [
+        {
+          "id": "p002",
+          "name": "Crochet Flower Handbag",
+          "price": 1299,
+          "quantity": 1,
+          "image": "https://i.pinimg.com/736x/20/7f/75/207f7591acf95f28373329a15de90531.jpg",
+          "category": "Bags"
+        }
+      ],
+      "totalItems": 1,
+      "totalAmount": 1299,
+      "status": "Shipped",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "createdAt": "2026-09-30T07:04:33.680Z",
+      "id": "l_mxKX3Ge7c"
+    },
+    {
+      "userId": "2",
+      "customer": {
+        "name": "Devika",
+        "email": "devika@gmail.com",
+        "phone": ""
+      },
+      "customerName": "Devika",
+      "email": "devika@gmail.com",
+      "phone": "",
+      "shippingAddress": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "address": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "items": [
+        {
+          "id": "p004",
+          "name": "Cute Crochet Bunny",
+          "price": 699,
+          "quantity": 1,
+          "image": "https://i.pinimg.com/736x/9c/09/6a/9c096a929744f26890cbd49daa9086d8.jpg",
+          "category": "Amigurumi"
+        }
+      ],
+      "totalItems": 1,
+      "totalAmount": 699,
+      "status": "Pending",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "createdAt": "2026-09-30T08:35:37.464Z",
+      "id": "rRaVcqxPmiM"
+    },
+    {
+      "userId": "L3gvmQkjQZ4",
+      "customer": {
+        "name": "Lakshmi",
+        "email": "devika11unnikrishnan@gmail.com",
+        "phone": ""
+      },
+      "customerName": "Lakshmi",
+      "email": "devika11unnikrishnan@gmail.com",
+      "phone": "",
+      "shippingAddress": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "address": {
+        "address": "",
+        "city": "",
+        "state": "",
+        "pincode": ""
+      },
+      "items": [
+        {
+          "id": "p005",
+          "name": "Crochet Rose Bouquet",
+          "price": 799,
+          "quantity": 1,
+          "image": "https://rukminim2.flixcart.com/image/960/1280/xif0q/artificial-flower/7/h/t/1-crochet-rose-bouquet-saarforyou-enriched-0-original-imahh5g5bk9ahgqd.jpeg?q=20",
+          "category": "Home Decor"
+        }
+      ],
+      "totalItems": 1,
+      "totalAmount": 799,
+      "status": "Pending",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "createdAt": "2026-09-30T10:23:56.710Z",
+      "id": "HPZEX1sRGSw"
+    },
+    {
+      "userId": "U8qf7_jGExU",
+      "customer": {
+        "name": "Vishnu VG",
+        "email": "vis@gmail.com",
+        "phone": "8950264524"
+      },
+      "customerName": "Vishnu VG",
+      "email": "vis@gmail.com",
+      "phone": "8950264524",
+      "shippingAddress": {
+        "address": "asdfghjkl;zxcvbndfghjkfghjxcvbnm",
+        "city": "asdfghjkghj",
+        "state": "qwertyuiopcvb",
+        "pincode": "123456"
+      },
+      "address": {
+        "address": "asdfghjkl;zxcvbndfghjkfghjxcvbnm",
+        "city": "asdfghjkghj",
+        "state": "qwertyuiopcvb",
+        "pincode": "123456"
+      },
+      "items": [
+        {
+          "id": "p005",
+          "name": "Crochet Rose Bouquet",
+          "price": 799,
+          "quantity": 1,
+          "image": "https://rukminim2.flixcart.com/image/960/1280/xif0q/artificial-flower/7/h/t/1-crochet-rose-bouquet-saarforyou-enriched-0-original-imahh5g5bk9ahgqd.jpeg?q=20",
+          "category": "Home Decor"
+        }
+      ],
+      "totalItems": 1,
+      "totalAmount": 799,
+      "status": "Delivered",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "createdAt": "2026-10-17T09:42:22.288Z",
+      "id": "-rH78fych78"
+    }
+  ],
+  "carts": [],
+  "wishlists": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

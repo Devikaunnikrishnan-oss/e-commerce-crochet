@@ -1,0 +1,41 @@
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.admin-layout {
+  min-height: 100vh;
+  background: #f5f2ed;
+}
+
+
+/*
+  Sidebar is 245px wide,
+  so content starts after it.
+*/
+
+.admin-main {
+  min-height: 100vh;
+  margin-left: 245px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .admin-main {
+    margin-left: 210px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-main {
+    margin-left: 70px;
+  }
+
+}

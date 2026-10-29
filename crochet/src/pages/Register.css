@@ -1,0 +1,404 @@
+
+/* =====================================
+   REGISTER PAGE
+===================================== */
+
+.register-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(139, 30, 63, 0.16),
+      transparent 35%
+    ),
+    #080808;
+
+  color: #f7f1f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================
+   REGISTER CARD
+===================================== */
+
+.register-page .register-box {
+  display: block !important;
+
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 38px 34px;
+
+  box-sizing: border-box;
+
+  background: #111111;
+  border: 1px solid #38232b;
+  border-radius: 12px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* =====================================
+   BRAND
+===================================== */
+
+.register-page .register-brand {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: #d88ba1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.register-page .register-brand-line {
+  display: block;
+  width: 24px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #8b1e3f;
+}
+
+.register-page .register-subtitle {
+  margin: 18px 0 10px;
+
+  color: #c47787;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* =====================================
+   HEADING
+===================================== */
+
+.register-page .register-box h1 {
+  display: block;
+  margin: 0;
+
+  color: #fff5f7;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.register-page .register-description {
+  margin: 12px 0 26px;
+
+  color: #aaa0a3;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* =====================================
+   FORM LAYOUT
+   Keep all fields vertically stacked
+===================================== */
+
+.register-page .register-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+
+  width: 100% !important;
+  gap: 19px !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-page .register-form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+
+  width: 100% !important;
+  min-width: 0;
+  gap: 8px !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   LABELS
+===================================== */
+
+.register-page .register-form-group label {
+  display: block !important;
+  width: 100%;
+
+  color: #e2d5d9;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+.register-page .register-form-group input {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0;
+  height: 46px !important;
+  margin: 0;
+  padding: 0 14px;
+
+  box-sizing: border-box !important;
+
+  background: #191719;
+  border: 1px solid #403238;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+
+  outline: none;
+  transition: border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.register-page .register-form-group input::placeholder {
+  color: #82777b;
+}
+
+.register-page .register-form-group input:focus {
+  border-color: #a52a4d;
+  box-shadow: 0 0 0 3px rgba(165, 42, 77, 0.14);
+}
+
+/* =====================================
+   REGISTER BUTTON
+===================================== */
+
+.register-page .register-button {
+  display: block !important;
+
+  width: 100% !important;
+  min-height: 48px;
+  margin: 4px 0 0;
+  padding: 13px 18px;
+
+  box-sizing: border-box;
+
+  background: #8b1e3f;
+  border: 1px solid #8b1e3f;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: background 0.25s ease,
+              transform 0.25s ease;
+}
+
+.register-page .register-button:hover:not(:disabled) {
+  background: #a52a4d;
+  transform: translateY(-1px);
+}
+
+.register-page .register-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* =====================================
+   ERROR MESSAGE
+===================================== */
+
+.register-page .register-error {
+  display: block;
+  margin: 0 0 20px;
+  padding: 12px;
+
+  background: rgba(165, 42, 77, 0.12);
+  border: 1px solid rgba(220, 90, 120, 0.4);
+  border-radius: 5px;
+
+  color: #ff9caf;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.register-page .register-divider {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 14px;
+
+  margin: 25px 0 20px;
+
+  color: #82777b;
+  font-size: 10px;
+}
+
+.register-page .register-divider span:first-child,
+.register-page .register-divider span:last-child {
+  display: block;
+  height: 1px;
+  flex: 1;
+  background: #30272b;
+}
+
+/* =====================================
+   LOGIN LINK
+===================================== */
+
+.register-page .register-login-text {
+  display: block;
+  margin: 0;
+
+  color: #b9afb2;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.register-page .register-login-link {
+  color: #e18ba5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-page .register-login-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.register-page .register-footer {
+  display: block;
+  margin: 25px 0 0;
+  padding-top: 18px;
+
+  border-top: 1px solid #30272b;
+
+  color: #74696d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+  .register-page {
+    padding: 24px 14px;
+  }
+
+  .register-page .register-box {
+    padding: 30px 22px;
+  }
+
+  .register-page .register-box h1 {
+    font-size: 30px;
+  }
+
+  .register-page .register-description {
+    font-size: 12px;
+  }
+
+  .register-page .register-brand {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}
+
+
+/* =====================================
+   WHITE THEME OVERRIDES
+===================================== */
+
+.register-page {
+  background: #ffffff !important;
+  color: #302923 !important;
+}
+
+.register-page .register-box {
+  background: #fffdfa !important;
+  border: 1px solid #e7dfd8 !important;
+  box-shadow: 0 15px 45px rgba(48, 41, 35, 0.08) !important;
+}
+
+.register-page .register-box h1 {
+  color: #302923 !important;
+}
+
+.register-page .register-description {
+  color: #827770 !important;
+}
+
+.register-page .register-form-group label {
+  color: #403833 !important;
+}
+
+.register-page .register-form-group input {
+  background: #ffffff !important;
+  border: 1px solid #ded5cd !important;
+  color: #302923 !important;
+}
+
+.register-page .register-form-group input::placeholder {
+  color: #9a9089 !important;
+}
+
+.register-page .register-form-group input:focus {
+  border-color: #a52a4d !important;
+  box-shadow: 0 0 0 3px rgba(165, 42, 77, 0.10) !important;
+}
+
+.register-page .register-login-text {
+  color: #766c65 !important;
+}
+
+.register-page .register-footer {
+  color: #827770 !important;
+  border-top-color: #e7dfd8 !important;
+}
+
+.register-page .register-divider {
+  color: #827770 !important;
+}
+
+.register-page .register-divider span:first-child,
+.register-page .register-divider span:last-child {
+  background: #e7dfd8 !important;
+}

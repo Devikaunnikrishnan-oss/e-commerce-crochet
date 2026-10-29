@@ -1,0 +1,320 @@
+/* =========================================
+   ADMIN ORDERS - FORCE TABLE STYLING
+   ========================================= */
+
+.admin-orders-page table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.admin-orders-page table thead {
+  background: #f3f0eb;
+}
+
+.admin-orders-page table th {
+  padding: 16px 18px;
+  border-bottom: 1px solid #ddd5ce;
+
+  color: #8d847e;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.admin-orders-page table td {
+  padding: 18px;
+
+  border-bottom: 1px solid #eee9e4;
+
+  color: #514943;
+
+  font-size: 13px;
+
+  vertical-align: middle;
+}
+
+.admin-orders-page table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.admin-orders-page table tbody tr:hover {
+  background: #fcfaf8;
+}
+
+.admin-orders-page table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+   ========================================= */
+
+.admin-orders-page table {
+  margin-top: 0;
+}
+
+
+/* =========================================
+   SEARCH INPUT
+   ========================================= */
+
+.admin-orders-page input[type="text"],
+.admin-orders-page input[type="search"] {
+  width: 260px;
+
+  padding: 11px 13px;
+
+  border: 1px solid #ddd5ce;
+
+  background: #ffffff;
+
+  color: #302923;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 13px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.admin-orders-page input[type="text"]:focus,
+.admin-orders-page input[type="search"]:focus {
+  border-color: #a85f6e;
+}
+
+.admin-orders-page input::placeholder {
+  color: #a39a94;
+}
+
+
+/* =========================================
+   STATUS SELECT
+   ========================================= */
+
+.admin-orders-page select {
+  padding: 10px 13px;
+
+  border: 1px solid #ddd5ce;
+
+  background: #ffffff;
+
+  color: #514943;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 13px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.admin-orders-page select:focus {
+  border-color: #a85f6e;
+}
+
+
+/* =========================================
+   SEARCH + FILTER AREA
+   ========================================= */
+
+.admin-orders-page input[type="text"] + select,
+.admin-orders-page input[type="search"] + select {
+  margin-left: 8px;
+}
+
+
+/* =========================================
+   ORDER ID
+   ========================================= */
+
+.admin-orders-page table td:first-child {
+  color: #a85f6e;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   CUSTOMER NAME
+   ========================================= */
+
+.admin-orders-page table td:nth-child(2) {
+  min-width: 210px;
+}
+
+.admin-orders-page table td:nth-child(2) strong {
+  display: block;
+
+  color: #302923;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DATE
+   ========================================= */
+
+.admin-orders-page table td:nth-child(3) {
+  color: #706761;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   ITEMS
+   ========================================= */
+
+.admin-orders-page table td:nth-child(4) {
+  text-align: center;
+}
+
+
+/* =========================================
+   AMOUNT
+   ========================================= */
+
+.admin-orders-page table td:nth-child(5) {
+  color: #302923;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+.admin-orders-page table td:nth-child(6) {
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS BADGE
+   ========================================= */
+
+.admin-orders-page table td:nth-child(6) span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 85px;
+
+  padding: 7px 12px;
+
+  border: 1px solid #ddd5ce;
+
+  background: #f5f1ec;
+
+  color: #786d63;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   ACTION BUTTON
+   ========================================= */
+
+.admin-orders-page table td:last-child button {
+  padding: 8px 16px;
+
+  border: 1px solid #a85f6e;
+
+  background: #ffffff;
+
+  color: #a85f6e;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.admin-orders-page table td:last-child button:hover {
+  background: #a85f6e;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+   ========================================= */
+
+.admin-orders-page table {
+  overflow: hidden;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .admin-orders-page {
+    padding: 30px 25px 50px;
+  }
+
+  .admin-orders-page table {
+    min-width: 900px;
+  }
+
+  .admin-orders-page input[type="text"],
+  .admin-orders-page input[type="search"] {
+    width: 220px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-orders-page {
+    padding: 25px 15px 40px;
+  }
+
+  .admin-orders-page input[type="text"],
+  .admin-orders-page input[type="search"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .admin-orders-page input[type="text"] + select,
+  .admin-orders-page input[type="search"] + select {
+    margin-left: 0;
+  }
+}
